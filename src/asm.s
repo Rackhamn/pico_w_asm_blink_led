@@ -6,9 +6,9 @@
 .code	32		@ Pico W is 32 bit
 .thumb_func		@ ARMv6-M (Thumb)
 
-.EQU	LED_PIN, 	0
+.EQU	LED_PIN, 	0	@ WL_GPIO0
 .EQU	GPIO_OUT, 	1
-.EQU	sleep_time, 	1000
+.EQU	sleep_time, 	1000	@ 1000ms = 1sec
 
 .global main_asm	@ Starting address for linker
 main_asm:
