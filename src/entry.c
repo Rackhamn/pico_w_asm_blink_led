@@ -17,7 +17,7 @@ void link_cyw43_gpio_put(int pin, int value) {
 void main() {
 	stdio_init_all();
 	if(cyw43_arch_init() != 0) return;
-	gpio_init(0);
+	// gpio_init(0);
 	
 	main_asm();
 }
